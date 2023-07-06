@@ -26,7 +26,7 @@ app.get("/cars/:id", (req, res) => {
     res.send(car);
 });
 
-
+// Create a new car post
 function getNextIdFromCollection(collection) {
     if (collection.length === 0) return 1;
     const lastRecord = collection[collection.length - 1];
